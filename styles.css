@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 2rem; /* Standard size for body text */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #fff, #ccc);
+}
+
+header h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 7rem; /* Increased size for header */
+    color: #333;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    animation: flash 3s infinite;
+}
+
+img {
+    max-width: 100%; /* Ensures images are not larger than the screen width */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* This centers the images vertically if they are of different heights */
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 40%; /* Reducing size to 40% of their container, which is effectively a 60% reduction in size */
+    height: auto;
+    margin: 0 10px; /* Adds spacing between the images */
+}
+
+.bio-box {
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #2e3f90;
+    color: #fff; /* Ensuring good contrast for readability */
+    width: 80%; /* Managing box width for better content management */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.twitter-link {
+    display: block;
+    background-color: #1DA1F2;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 30px auto;
+    width: fit-content;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+    animation: flash 2s infinite;
+}
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem; /* Increased footer text size for better visibility */
+}
+
+footer h2 {
+    font-size: 2.5rem; /* Appropriately large header in footer for emphasis */
+    margin-bottom: 15px;
+}
+
+footer p {
+    line-height: 1.6; /* Improved line height for better text flow and readability */
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; } /* Adjusted to be less jarring but still noticeable */
+}
